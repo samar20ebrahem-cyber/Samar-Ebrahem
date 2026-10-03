@@ -1,0 +1,98 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+    position: fixed;
+    margin-top: 10px;
+    z-index: 9999;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.two {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.three {
+    background: linear-gradient(to right, #5361C4, #313FAA, #1122A1);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three p {
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.four .pt {
+    font-size: medium;
+    font-weight: 600;
+    color: #1E2871;
+}
+
+.ps {
+    color: #1E2871;
+    font-size: small;
+    font-weight: 500;
+    opacity: 66%;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding:  20px 4px;
+    height: 20px;
+    border: #111111 1px solid;
+
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+li div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:6px;
+}
+
+li div  p{
+    color: #1E1E1E;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.i{
+   font-size: 16px;
+   color: #111111;
+}
+
+.act{
+    background: linear-gradient(to right, #2237C9,#1E30B6);
+    opacity: 80%;
+    border-radius: 20px;
+    padding: 10px;
+    width: 90px;
+    height: 30px;
+}
+.act p ,.act .i{
+    color: white;
+}
+
