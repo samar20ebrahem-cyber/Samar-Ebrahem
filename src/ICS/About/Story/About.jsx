@@ -1,7 +1,22 @@
 import './About.css'
 import Voice from '../../../assets/aboutVoice.mp3'
 import { FaPlay, FaStop } from "react-icons/fa";
+import { useRef, useState } from "react"
 export function About() {
+    const audioRef = useRef(null)
+    const [currentTime, setCurrentTime] = useState(0)
+    const [duration, setDuration] = useState(0)
+    const handelGo = () => {
+        audioRef.current.play()
+    }
+    const handleStop = () => {
+        audioRef.current.pause()
+    }
+    const formatTime = (time) => {
+        const minutes = Math.floor(time / 60)
+        const seconds = Math.floor(time % 60)
+        return `${minutes} : ${seconds.toString().padStart(2, '0')} `
+    }
     return (
 
         <>
@@ -10,15 +25,23 @@ export function About() {
                 <p className="po">Born in 2007. Building software in 2026.</p>
                 <div className="rideo">
                     <div className='sit'>
-                        <button className='pl'>
+                        <button className='pl' onClick={handelGo}>
                             <FaPlay className='ip' />
                             <p>Play</p>
                         </button>
-                        <audio src={Voice} ></audio>
-                        <div className="audio-line"></div>
-                        <p className='time'>0:00/0:44</p>
+                        <audio src={Voice} ref={audioRef}
+                            onLoadedMetadata={() => {
+                                setDuration(audioRef.current.duration)
+                            }}
+                            onTimeUpdate={() => {
+                                setCurrentTime(audioRef.current.currentTime);
+                            }}></audio>
+                        <input type='range' className="audio-line" min="0" max={duration} value={currentTime} />
+                        <span className='time'>
+                            <span>{formatTime(currentTime)}</span>
+                            <span>/ {formatTime(duration)}</span></span>
 
-                        <button className='st'>
+                        <button className='st' onClick={handleStop}>
                             <FaStop className='is ' />
                             <p className='ps'>Stop</p>
                         </button>
