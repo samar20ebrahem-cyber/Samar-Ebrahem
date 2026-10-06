@@ -1,6 +1,6 @@
 import './App.css'
-// import { Navbar } from '../src/ICS/Navbar/Navbar.jsx'
-// import{Header} from '../src/ICS/Header/Header.jsx'
+import { Navbar } from '../src/ICS/Navbar/Navbar.jsx'
+import { Header } from '../src/ICS/Header/Header.jsx'
 import { AboutApp } from './ICS/About/AboutApp.jsx'
 import { useEffect, useState } from "react"
 function App() {
@@ -21,9 +21,9 @@ function App() {
   }
   return (
     <>
-      {/* <Navbar />
-     <Header/> */}
-      <AboutApp />
+      <Navbar />
+      <section id='home'> <Header /> </section>
+      <section id="about"> <AboutApp /></section>
     </>
   )
 }

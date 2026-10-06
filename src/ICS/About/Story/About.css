@@ -50,7 +50,12 @@ h1 {
     cursor: pointer;
     transition: all 1s;
 }
-
+.st{
+    opacity: .5;
+}
+.st .clicked{
+    opacity: 1;
+}
 .pl:hover {
     background: rgb(216, 217, 250);
 }
@@ -75,9 +80,9 @@ h1 {
     border-radius: 30px;
 }
 
-.ps, .is {
+/* .ps, .is {
     opacity: .5;
-}
+} */
 
 .time {
     color: #3041B0;

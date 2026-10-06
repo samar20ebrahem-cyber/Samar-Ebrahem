@@ -1,10 +1,12 @@
-import{ About } from '../About/Story/About.jsx'
+import { About } from '../About/Story/About.jsx'
 import { Education } from '../About/Education/Education.jsx'
-export function AboutApp(){
-    return(
+import { Journey } from '../About/Journey/Journey.jsx'
+export function AboutApp() {
+    return (
         <>
-        <About />
-        <Education/>
+            <About />
+            <Journey />
+            <Education />
         </>
     )
 }

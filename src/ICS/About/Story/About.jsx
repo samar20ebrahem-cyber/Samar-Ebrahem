@@ -2,15 +2,18 @@ import './About.css'
 import Voice from '../../../assets/aboutVoice.mp3'
 import { FaPlay, FaStop } from "react-icons/fa";
 import { useRef, useState } from "react"
+
 export function About() {
     const audioRef = useRef(null)
     const [currentTime, setCurrentTime] = useState(0)
     const [duration, setDuration] = useState(0)
+    const [stopClicked, setStopClicked] = useState(false)
     const handelGo = () => {
         audioRef.current.play()
     }
     const handleStop = () => {
         audioRef.current.pause()
+        setStopClicked(true)
     }
     const formatTime = (time) => {
         const minutes = Math.floor(time / 60)
@@ -41,9 +44,9 @@ export function About() {
                             <span>{formatTime(currentTime)}</span>
                             <span>/ {formatTime(duration)}</span></span>
 
-                        <button className='st' onClick={handleStop}>
-                            <FaStop className='is ' />
-                            <p className='ps'>Stop</p>
+                        <button className={`st ${stopClicked}? "clicked" : "" ` } onClick={handleStop}>
+                            <FaStop className={`is ${stopClicked}? "clicked" : "" ` }/>
+                            <p className={`ps ${stopClicked}? "clicked" : "" ` }>Stop</p>
                         </button>
                     </div>
                     <div className='parttwo'>

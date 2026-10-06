@@ -28,7 +28,7 @@ export function Navbar() {
                         <li>
                             <div className="act">
                                 <HiHome  className="i"/>
-                                <p>Home</p>
+                                <p> <a href="#home">Home</a></p>
                             </div>
                         </li>
                         <li>
