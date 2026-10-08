@@ -1,43 +1,34 @@
 import './Journey.css'
 import { JourneyData } from '../Journey/JourneyData.js'
-import { FaGraduationCap } from "react-icons/fa"
+import { FaRoute } from "react-icons/fa"
 export function Journey() {
     return (
         <>
-            <section>
+            <section className="journey">
                 <h1>My Journey</h1>
-                <div className="card">
-                    <div className="timeline">
-                        <div className="timeline-item">
-                            <div className="icon-circle">
-                                <FaGraduationCap />
-                            </div>
-                        </div>
 
-                        <div className="timeline-item">
-                            <div className="icon-circle">
-                                <FaGraduationCap />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='education-content'>
-                        {
-                            JourneyData.map((item) => {
-                                const Icon = item.icon
-                                return (
-                                    <div key={item.id} className='ed'>
-                                        <span>
+                <div className="timeline">
+                    {
+                        JourneyData.map((item, index) => {
+                            const Icon = item.icon
+                            return (
+                                <div key={item.id} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'
+                                    }`}>
+                                    <div className="education-card">
+                                        <span className='i-time'>
                                             <Icon className='ie' />
                                             <span>{item.time}</span>
                                         </span>
                                         <h2>{item.titel}</h2>
                                         <p>{item.desc}</p>
                                     </div>
-                                )
-                            })
-                        }
-                    </div>
+                                    <div className="icon-circle">
+                                        <FaRoute/>
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                 </div>
             </section >
         </>

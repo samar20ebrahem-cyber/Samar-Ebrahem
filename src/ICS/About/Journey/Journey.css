@@ -1,0 +1,128 @@
+.journey {
+    padding: 50px 20px;
+}
+
+.journey h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    color: #1E2871;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+/* الدف اللي شايل كله */
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* الخط اللي في النص */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #D2D8FE;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+}
+
+/* الكارت*/
+.education-card {
+    width: 42%;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    animation: 2s education infinite;
+}
+
+@keyframes education {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+/* كروت شمال*/
+.timeline-item.left {
+    justify-content: flex-start;
+}
+
+.timeline-item.right {
+    justify-content: flex-end;
+}
+
+
+/* الدائرة*/
+.icon-circle {
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: white;
+    border: 2px solid #D2D8FE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E2871;
+    z-index: 2;
+}
+
+.i-time {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #1E2871;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.icon-circle svg {
+    font-size: 20px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #777;
+    font-size: 14px;
+}
+
+.ie {
+    color: #1E2871;
+}
+
+.education-card h2 {
+    margin: 12px 0;
+    color: #1E2871;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.education-card p {
+    color: #4B56B5;
+    line-height: 1.6;
+    font-size: 12px;
+}
