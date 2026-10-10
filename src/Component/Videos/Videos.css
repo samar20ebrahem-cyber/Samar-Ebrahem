@@ -1,0 +1,49 @@
+.card-videos{
+    border: 1px solid #3041B0;
+    padding: 16px;
+    background: #FAFAFD;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.card-vid{
+    border: 1px solid #9292f6;
+}
+
+.blow{
+    background-color: #3041B0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap:20px;
+    height: 200px;
+
+}
+.icon-dev{
+    background-color: #e3e3ff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-dev svg{
+    color:#3041B0;
+}
+
+.blow p{
+    color:#FAFAFD;
+    font-weight: 700;
+}
+
+.desc-vid{
+    color: black;
+    /* direction: rtl; */
+    padding: 20px;
+    text-align: right;
+}

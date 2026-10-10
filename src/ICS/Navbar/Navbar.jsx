@@ -1,14 +1,4 @@
-import {
-    HiHome,
-    HiUser,
-    HiCode,
-    HiFolder,
-    HiMoon
-} from "react-icons/hi"
-
-import {
-    LuMail
-} from "react-icons/lu"
+import { FaVideo, FaRegFileAlt, FaTerminal } from "react-icons/fa";
 
 import './Navbar.css'
 export function Navbar() {
@@ -27,36 +17,21 @@ export function Navbar() {
                     <ul>
                         <li>
                             <div className="act">
-                                <HiHome  className="i"/>
-                                <p> <a href="#home">Home</a></p>
+                                <FaRegFileAlt className="i"/>
+                                <p> <a href="#home">Normal</a></p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <HiUser className="i"/>
-                                <p>About</p>
+                                <FaTerminal className="i"/>
+                                <p>Trminal</p>
                             </div>
                         </li>
                         <li>
                             <div>
-                                <HiCode className="i"/>
-                                <p>Skills</p>
+                                <FaVideo className="i"/>
+                                <p>Video</p>
                             </div>
-                        </li>
-                        <li>
-                            <div>
-                                <HiFolder className="i" />
-                                <p>Projects</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <LuMail className="i" />
-                                <p>Contacts</p>
-                            </div>
-                        </li>
-                        <li>
-                            <HiMoon />
                         </li>
                     </ul>
                 </div>

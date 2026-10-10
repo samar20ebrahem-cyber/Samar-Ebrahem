@@ -58,10 +58,10 @@ nav {
 ul {
     display: flex;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 10px;
     padding:  20px 4px;
     height: 20px;
-    border: #111111 1px solid;
+    border: #050836 1px solid;
 
 }
 
@@ -90,9 +90,9 @@ li div  p{
 }
 
 .act{
-    background: linear-gradient(to right, #2237C9,#1E30B6);
+    background: #08136b;
     opacity: 80%;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     width: 90px;
     height: 30px;

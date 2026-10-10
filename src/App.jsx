@@ -2,10 +2,11 @@ import './App.css'
 import { Navbar } from '../src/ICS/Navbar/Navbar.jsx'
 // import { Header } from '../src/ICS/Header/Header.jsx'
 // import { AboutApp } from './ICS/About/AboutApp.jsx'
-import { Skills } from './ICS/Skills/Skills.jsx'
-import {Projects} from './ICS/Projects/Projects.jsx'
+// import { Skills } from './ICS/Skills/Skills.jsx'
+// import {Projects} from './ICS/Projects/Projects.jsx'
 // import { Connect }  from './ICS/Connect/Connect.jsx'
 // import {InteractiveTerminal} from './ICS/InteractiveTerminal/InteractiveTerminal.jsx'
+// import {Videos} from './Component/Videos/Videos.jsx'
 import { useEffect, useState } from "react"
 function App() {
   const [loading, setLoading] = useState(true)
@@ -28,10 +29,11 @@ function App() {
       <Navbar />
       {/* <Header />
       <AboutApp /> */}
-      <Skills />  
-      <Projects />
+      {/* <Skills />  
+      <Projects /> */}
       {/* <Connect /> */}
       {/* <InteractiveTerminal/> */}
+      {/* <Videos/> */}
     </>
   )
 }
