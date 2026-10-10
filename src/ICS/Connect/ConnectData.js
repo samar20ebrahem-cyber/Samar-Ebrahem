@@ -1,0 +1,34 @@
+export const ConnectData =[
+    {
+        id:1,
+        desc:'',
+        p:'',
+        link:'',
+        pbutton:'',
+        lbutton:'',
+    },
+    {
+        id:2,
+        desc:'',
+        p:'',
+        link:'',
+        pbutton:'',
+        lbutton:'',
+    },
+    {
+        id:3,
+        desc:'',
+        p:'',
+        link:'',
+        pbutton:'',
+        lbutton:'',
+    },
+    {
+        id:4,
+        desc:'',
+        p:'',
+        link:'',
+        pbutton:'',
+        lbutton:'',
+    },
+]

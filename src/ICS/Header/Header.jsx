@@ -3,28 +3,32 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt } from "react-icons
 export function Header() {
     return (
         <>
-            <main>
+
+            <section id='home'>
                 <h1>Samar Ebrahem </h1>
-                <p className='pon'>Front-end Developer</p>
-                <p className='ptw'>Passionate Frontend Developer,Lifelong learner,<br />
+                <p className='hero-role'>Front-end Developer</p>
+                <p className='hero-description'>Passionate Frontend Developer,Lifelong learner,<br />
                     Building clean, Modern and use-focused web <br />
                     experiences.</p>
-                <div className='oned'>
-                    <div className='td'>
-                        <FaEnvelope className='ic' />
+                <div className='social-links'>
+                    <div className='social-link'>
+                        <FaEnvelope className='social-icon' />
                     </div>
-                    <div className='td'>
-                        <FaLinkedin className='ic' />
+                    <div className='social-link'>
+                        <FaLinkedin className='social-icon' />
                     </div>
-                    <div className='td'>
-                        <FaGithub className='ic' />
+                    <div className='social-link'>
+                        <FaGithub className='social-icon' />
                     </div>
                 </div>
-                <button className='b'>
-                    <p className='pth'>View My Work</p>
+                <button className='work-button'>
+                    <p>View My Work</p>
                     <FaExternalLinkAlt />
                 </button>
-            </main>
+            </section>
         </>
     )
 }
+
+
+

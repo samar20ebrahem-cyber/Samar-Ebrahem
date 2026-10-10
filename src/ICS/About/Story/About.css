@@ -1,45 +1,43 @@
-section {
+#about {
     width: 100%;
-    margin-top: 20px;
     text-align: center;
 }
 
-h1 {
+#about h1 {
     color: #1E2871;
     font-size: 50px;
     font-weight: 600;
 }
 
-.po {
+.about-subtitle {
     color: #3041B0;
     font-size: medium;
     font-weight: 600;
 
 }
 
-.rideo {
+.about-audio-layout {
     border: 1px solid #D2D8FE;
     box-shadow: 3px 3px 8px #e2e5f5;
     padding: 5px 20px;
     margin-top: 24px;
 }
 
-.sit {
+.about-audio-player {
     width: 100%;
+    padding: 10px;
     margin: auto;
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 10px;
     border: 1px solid #2837AA;
-    padding: 10px;
     border-radius: 20px 20px 0 0;
     background: #F8F9FF;
     margin-bottom: 8px;
-
 }
 
-.pl, .st {
+.about-play-button, .about-stop-button {
     padding: 6px 10px;
     display: flex;
     align-items: center;
@@ -49,30 +47,30 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: all 1s;
-}
-.st{
     opacity: .5;
 }
-.st .clicked{
+
+.about-play-button.clicked , .about-stop-button.clicked{
     opacity: 1;
 }
-.pl:hover {
+.about-stop-button.clicked {
+    border: 1px solid red;
+}
+
+.about-play-button:hover {
     background: rgb(216, 217, 250);
 }
 
-.pl p, .ps {
+.about-play-button p,
+.about-stop-label,
+.about-play-icon,
+.about-stop-icon {
     color: #1E2871;
     font-size: medium;
     font-weight: 500;
 }
 
-.ip, .is {
-    color: #1E2871;
-    font-size: medium;
-    font-weight: 500;
-}
-
-.audio-line {
+.about-audio-progress {
     flex: 1;
     height: 6px;
     background-color: #FAFAFD;
@@ -80,17 +78,18 @@ h1 {
     border-radius: 30px;
 }
 
-/* .ps, .is {
-    opacity: .5;
-} */
-
-.time {
+.about-audio-time {
     color: #3041B0;
     font-size: medium;
     font-weight: 400;
 }
 
-.pt {
+.about-stop-button.clicked .about-stop-icon,
+.about-stop-button.clicked .about-stop-label {
+    color: red;
+}
+
+.about-description-text {
     color: #151C51;
     font-size: 16px;
     font-weight: 450;

@@ -1,4 +1,8 @@
-.card {
+#education {
+    width: 100%;
+    text-align: center;
+}
+.education-timeline-layout {
     display: flex;
     width: 100%;
     margin: 40px auto;
@@ -6,7 +10,7 @@
     align-items: flex-start;
 }
 
-.timeline {
+.education-timeline{
     width: 100px;
     position: relative;
     display: flex;
@@ -14,7 +18,7 @@
     align-items: center;
 }
 
-.timeline::before {
+.education-timeline::before {
     content: "";
     position: absolute;
     width: 2px;
@@ -25,14 +29,15 @@
     transform: translateX(-50%);
 }
 
-.timeline-item {
-    height: 250px;
+.education-timeline-item {
+     min-height: 233px;
+    height: auto;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-.icon-circle {
+.education-icon-circle {
     width: 82px;
     height: 82px;
     border: 3px solid #D7DCFD;
@@ -45,22 +50,16 @@
     z-index: 2;
 }
 
-.icon-circle svg {
+.education-icon-circle svg {
     font-size: 40px;
     color: #3041B0;
 }
 
-.timeline-item {
-    height: 250px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.education-content {
+.education-details {
     flex: 1;
 }
 
-.ed {
+.education-card {
     border: 1px solid #D7DCFD;
     box-shadow: 3px 3px 8px #D7DCFD;
     width: 100%;
@@ -76,7 +75,7 @@ h2 {
     font-size: x-large;
 }
 
-span {
+.education-details span {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -87,30 +86,30 @@ span p {
     margin-top: 10px;
 }
 
-.s {
+.education-institution {
     color: #3041B0;
     font-size: 20px;
     font-weight: 700;
     margin-block: 10px;
 }
 
-.ie {
+.education-info-icon {
     font-size: 20px;
     color: #3041B0;
 }
 
-.pg {
+.education-location{
     color: #3041B0;
     font-size: small;
     font-weight: 400;
 }
 
-.ach {
+.education-achievements-title {
     color: #1E2871;
     font-weight: 600;
 }
 
-.li {
+.education-achievement-item{
     margin-left: 16px;
     color: #3041B0;
     font-size: small;

@@ -11,7 +11,7 @@
 }
 
 /* الدف اللي شايل كله */
-.timeline {
+.journey-timeline {
     position: relative;
     width: 100%;
     max-width: 1000px;
@@ -19,7 +19,7 @@
 }
 
 /* الخط اللي في النص */
-.timeline::before {
+.journey-timeline::before {
     content: "";
     position: absolute;
     top: 0;
@@ -30,7 +30,7 @@
     transform: translateX(-50%);
 }
 
-.timeline-item {
+.journey-timeline-item {
     position: relative;
     width: 100%;
     min-height: 180px;
@@ -39,7 +39,7 @@
 }
 
 /* الكارت*/
-.education-card {
+.journey-card {
     width: 42%;
     padding: 25px;
     border: 1px solid #ddd;
@@ -52,27 +52,25 @@
 @keyframes education {
     0% {
         opacity: 0;
-
     }
 
     100% {
         opacity: 1;
-
     }
 }
 
 /* كروت شمال*/
-.timeline-item.left {
+.journey-timeline-item.journey-left {
     justify-content: flex-start;
 }
 
-.timeline-item.right {
+.journey-timeline-item.journey-right {
     justify-content: flex-end;
 }
 
 
 /* الدائرة*/
-.icon-circle {
+.journey-icon-circle {
     position: absolute;
     left: 50%;
     top: 12%;
@@ -89,7 +87,7 @@
     z-index: 2;
 }
 
-.i-time {
+.journey-time {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -98,30 +96,23 @@
     font-size: 13px;
 }
 
-.icon-circle svg {
+.journey-icon-circle svg {
     font-size: 20px;
 }
 
-.date {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #777;
-    font-size: 14px;
-}
 
-.ie {
+.journey-item-icon {
     color: #1E2871;
 }
 
-.education-card h2 {
+.journey-card h2 {
     margin: 12px 0;
     color: #1E2871;
     font-weight: 600;
     font-size: 26px;
 }
 
-.education-card p {
+.journey-card p {
     color: #4B56B5;
     line-height: 1.6;
     font-size: 12px;
