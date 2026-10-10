@@ -1,35 +1,34 @@
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import './Projects.css'
 import { ProjectsData } from './ProjectsData.js'
 export function Projects() {
     return (
         <>
-            <section>
+            <section id='projects'>
                 <h1>Projects</h1>
-                <p>Showcasing my work across personal projects</p>
-                <div className="cardimge">
+                <p className='sub-title-projects'>Showcasing my work across personal projects</p>
+                <div className="cards-projects">
                     {
                         ProjectsData.map((item) => {
                             const Image = item.image
                             return (
                                 <>
-                                    <div>
+                                    <div className='card-projects' >
                                         <div className="img">
                                             <img src={Image} alt={item.title} />
                                         </div>
-                                        <div className="skills">
-                                            {item.skills.map((skill) => {
-                                                return (
-                                                    <>
-                                                        <span>{skill}</span>
-                                                    </>
-                                                )
-                                            })}
+                                        <div className="projects-skills">
+                                            {item.skills.map((skill) => (
+                                                <span className="projects-skill-circle" key={skill}>
+                                                    {skill}
+                                                </span>
+                                            ))}
                                         </div>
                                         <h2>{item.title}</h2>
-                                        <p>{item.description}</p>
+                                        <p className='desc-project'>{item.description}</p>
                                         <div className="links">
-                                            <a href={item.githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a>
-                                            <a href={item.liveUrl} target="_blank" rel="noopener noreferrer">Live Demo</a>
+                                            <a href={item.githubUrl} target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+                                            <a href={item.liveUrl} target="_blank" rel="noopener noreferrer"><FaExternalLinkAlt /></a>
                                         </div>
                                     </div>
                                 </>

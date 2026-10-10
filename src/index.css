@@ -10,7 +10,7 @@ body{
     margin-inline: auto;
 }
 section{
-    margin-bottom: 80px;
+    margin-block: 100px;
     width: 100%;
     height: 100vh;
 }

@@ -1,0 +1,120 @@
+#projects {
+    text-align: center;
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+
+.sub-title-projects {
+    text-align: center;
+    color: #3041B0;
+}
+
+.cards-projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+    margin-top: 30px;
+}
+
+.card-projects {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #D7DCFD;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    box-shadow: 3px 3px 8px #e2e5f5;
+}
+
+.card-projects .img {
+    width: 100%;
+    height: 170px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.card-projects .img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.projects-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 8px;
+    padding: 15px 12px 0;
+    min-height: 45px;
+}
+
+.projects-skill-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #D7DCFD;
+    border-radius: 8px;
+    background-color: #F8F9FF;
+    color: #3041B0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.card-projects h2 {
+    color: #1E2871;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 0 12px;
+    margin: 18px 0 10px;
+    text-align: left;
+}
+
+.card-projects .desc-project {
+    padding: 0 12px;
+    margin: 0 0 15px;
+    color: #3041B0;
+    text-align: left;
+    line-height: 1.7;
+}
+
+.card-projects .links {
+    display: flex;
+    gap: 12px;
+    padding: 15px 12px 0;
+    margin-top: auto;
+}
+
+.card-projects .links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.card-projects .links a svg {
+    color: #1E2871;
+    font-size: 20px;
+}
+.card-projects .links a:hover {
+    background-color: #F0F2FF;
+}
+
+@media (max-width: 900px) {
+    .cards-projects {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 600px) {
+    .cards-projects {
+        grid-template-columns: 1fr;
+    }
+}

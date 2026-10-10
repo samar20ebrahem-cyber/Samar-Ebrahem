@@ -1,5 +1,5 @@
 import { About } from '../About/Story/About.jsx'
-import { Education } from '../About/Education/Education.jsx'
+// import { Education } from '../About/Education/Education.jsx'
 import { Journey } from '../About/Journey/Journey.jsx'
 export function AboutApp() {
     return (
@@ -8,7 +8,7 @@ export function AboutApp() {
             
                 <About />
                 <Journey />
-                <Education />
+                {/* <Education /> */}
             
         </>
     )

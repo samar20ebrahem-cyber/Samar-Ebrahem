@@ -1,35 +1,40 @@
-import {
-    FaHtml5,
-    FaCss3Alt,
-    FaJs,
-    FaBootstrap,
-    FaReact,
-    FaCode
-} from "react-icons/fa"
-
 export const SkillsData = [
     {
-        icon: FaHtml5,
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
         name: 'HTML',
     },
     {
-        icon: FaCss3Alt,
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
         name: 'CSS',
     },
     {
-        icon: FaJs,
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
         name: 'JavaScript',
     },
     {
-        icon: FaBootstrap,
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg',
         name: 'Bootstrap',
     },
     {
-        icon: FaReact,
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
         name: 'React',
     },
     {
-        icon: FaCode,
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
         name: 'Type Script',
+    }
+    ,
+    {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+        name: 'Git',
     },
+    {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
+        name: 'GitHub',
+    },
+    {
+        icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+        name: 'figma',
+    },
+
 ]
