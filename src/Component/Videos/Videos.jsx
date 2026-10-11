@@ -50,17 +50,18 @@ export function Videos() {
                                             </button>
                                         )
                                     }
-                                    </div>
-
-                                    <div className="desc-vid">
-                                        <p>{vid.desc}</p>
-                                    </div>
                                 </div>
-                                ))
-                    }
+
+                                <div className="desc-vid">
+                                    <p>{vid.desc}</p>
+                                </div>
                             </div>
+                        ))
+                    }
+                </div>
 
             </section>
         </>
     )
 }
+

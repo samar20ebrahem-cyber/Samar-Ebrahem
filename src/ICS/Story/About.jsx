@@ -1,5 +1,5 @@
 import './About.css'
-import Voice from '../../../assets/aboutVoice.mp3'
+import Voice from '../../assets/aboutVoice.mp3'
 import { FaPlay, FaStop } from "react-icons/fa";
 import { useRef, useState } from "react"
 

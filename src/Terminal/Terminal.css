@@ -1,0 +1,75 @@
+body {
+    background: #111827;
+}
+
+.terminal {
+    background-color: #111827;
+    color: #E5E7EB;
+    padding: 24px;
+    font-family: "Courier New", monospace;
+    max-width: 100%;
+    height: auto;
+    min-height: 200px;
+}
+
+.terminal h1 {
+    color: #22D3EE;
+    font-size: 24px;
+    border-bottom: 1px solid #374151;
+}
+
+.body {
+    line-height: 1.7;
+}
+
+.prompt {
+    color: #4ADE80;
+}
+
+.output {
+    margin-left: 10px;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+.contact-links a {
+    color: #09434c;
+    transition: color 0.5s ease;
+}
+
+.contact-links a:hover {
+    text-decoration: solid;
+    color: #22D3EE;
+    text-decoration: underline;
+}
+
+.terminal input {
+    background: transparent;
+    color: #3100e1;
+    border: none;
+    outline: none;
+    font: inherit;
+    flex: 1;
+    min-width: 0;
+}
+
+.terminal label {
+    color: #4ADE80;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 600px) {
+    .terminal {
+        padding: 16px;
+        margin: 16px;
+    }
+
+    .terminal h1 {
+        font-size: 20px;
+    }
+
+    body {
+        scroll-x: none;
+    }
+}
