@@ -1,13 +1,9 @@
-body {
-    background: #111827;
-}
-
 .terminal {
     background-color: #111827;
     color: #E5E7EB;
     padding: 24px;
     font-family: "Courier New", monospace;
-    max-width: 100%;
+    max-width: 100vw;
     height: auto;
     min-height: 200px;
 }
@@ -16,6 +12,7 @@ body {
     color: #22D3EE;
     font-size: 24px;
     border-bottom: 1px solid #374151;
+    text-align: left;
 }
 
 .body {

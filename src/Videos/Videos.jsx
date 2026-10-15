@@ -2,8 +2,8 @@ import './Videos.css'
 import { FaPlay } from "react-icons/fa";
 import { useState } from 'react';
 
-import englishVideo from '../../assets/englishVideo.mp4';
-import arabicVideo from '../../assets/arabicVideo.mp4';
+import englishVideo from '../assets/SamarEn.mp4';
+import arabicVideo from '../assets/SamarAr.mp4'
 
 
 export function Videos() {
@@ -14,14 +14,16 @@ export function Videos() {
             src: englishVideo,
             icon: '',
             title: 'who is Samar?',
-            desc: 'English video'
+            desc: 'English video',
+            rtl: 'en'
         },
         {
             id: 2,
             src: arabicVideo,
             icon: '',
             title: 'مين هي سمر؟',
-            desc: 'الفيديو بالعربي'
+            desc: 'الفيديو بالعربي',
+            rtl: 'ar'
         },
     ]
     return (

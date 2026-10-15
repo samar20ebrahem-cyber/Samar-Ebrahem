@@ -1,22 +1,22 @@
 #home {
     text-align: center;
-        min-height: 100vh;          
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center
 }
 
-h1 {
+.home h1 {
     color: #1E2871;
     font-weight: 700;
-    font-size: 50px;
+    font-size: clamp(32px, 5vw, 50px);
 }
 
-.hero-role{
+.hero-role {
     color: #1E2871;
     font-weight: 600;
-    font-size: 30px;
+    font-size: clamp(22px, 3.5vw, 30px);
 }
 
 .hero-description {
@@ -25,7 +25,7 @@ h1 {
     font-weight: 400;
 }
 
-.social-links{
+.social-links {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@ h1 {
     transform: scale(1.1);
 }
 
-.social-icon{
+.social-icon {
     color: #2837AA;
     font-size: 16px;
 }
@@ -59,8 +59,8 @@ h1 {
     padding: 10px 20px;
     gap: 10px;
     position: absolute;
-    top:72%;
-    left: 42%;
+    top: 71%;
+    left: 41%;
     width: 220px;
     border-radius: 8px;
     transition: all 1s;
@@ -71,15 +71,34 @@ h1 {
     background-color: #2837AA;
 }
 
-/* respon tab */
+@media (max-width: 768px) {
+    .work-button {
+        width: 100%;
+        left: 32%;
+        top: 74%;
+    }
+}
 
-/* @media (max-width:768) {
+/* Mobile */
+@media (max-width: 480px) {
     #home {
-        left: 15%;
+        padding-inline: 16px;
     }
 
-    h1 {
-        font-size: 38px;
-        font-weight: 400;
+    .home h1 {
+        font-size: 25px;
     }
-} */
+
+    .hero-role {
+        font-size: 20px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+    }
+
+    .work-button {
+        left: 30%;
+        top: 65%;
+    }
+}

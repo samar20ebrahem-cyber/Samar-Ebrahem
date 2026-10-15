@@ -1,0 +1,84 @@
+.connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.connect h1 {
+    color: #1E2871;
+}
+
+.simple{
+    text-align: center;
+    color: #1E2871;
+}
+.cards-connect {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    min-height: 300px;
+    margin-top: 18px;
+}
+
+.card-connect {
+    border: #062dcc 1px solid;
+    width: 290px;
+    padding: 10px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-connect {
+    display: flex;
+    gap: 8px;
+    margin-block: 12px;
+}
+
+.card-Connect h3 {
+    color: #1E2871;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.title-connect svg, .connect button svg {
+    color: #1E2871;
+    font-size: 28px;
+}
+
+.desc, .src-button {
+    color: #3041B0;
+    font-size: 14px;
+}
+
+.connect button {
+    background-color: #EBEDFF;
+    border: 1px solid #1E2871;
+    padding: 8px 12px;
+    margin-block: 10px;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect button:hover {
+    background-color: #1E2871;
+    color: #EBEDFF;
+}
+
+.connect button a {
+    margin-right: 10px;
+}
+
+.connect button svg {
+    font-size: 14px;
+}
+
+@media (max-width:768px) {
+    .cards-connect {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

@@ -1,15 +1,15 @@
 import './App.css'
-// import { Navbar } from '../src/ICS/Navbar/Navbar.jsx'
-// import { Header } from '../src/ICS/Header/Header.jsx'
-// import { About } from './ICS/Story/About.jsx'
-// import { Education } from './ICS/Education/Education.jsx'
-// import { Journey } from './ICS/Journey/Journey.jsx'
-// import { Skills } from './ICS/Skills/Skills.jsx'
-// import {Projects} from './ICS/Projects/Projects.jsx'
-// import { Connect }  from './ICS/Connect/Connect.jsx'
-// import {InteractiveTerminal} from './ICS/InteractiveTerminal/InteractiveTerminal.jsx'
-// import {Videos} from './Component/Videos/Videos.jsx'
-import {Terminal } from './Terminal/Terminal.jsx'
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate
+} from "react-router-dom"
+import { Navbar } from '../src/ICS/Navbar/Navbar.jsx'
+import { Normal } from './Pages/Normal.jsx'
+import { Videos } from './Videos/Videos.jsx'
+import { Terminal } from './Terminal/Terminal.jsx'
+
 import { useEffect, useState } from "react"
 function App() {
   const [loading, setLoading] = useState(true)
@@ -29,23 +29,16 @@ function App() {
   }
   return (
 
-    <div style={{
-      display:'flex',
-      flexDirection:'column',
-      gap:'8rem'
-    }}>
-      {/* <Navbar /> */}
-      {/* <Header /> */}
-      {/* <About /> */}
-      {/* <Journey/>
-      <Education/> */}
-      {/* <Skills />  
-      <Projects /> */}
-      {/* <Connect /> */}
-      {/* <InteractiveTerminal/> */}
-      {/* <Videos/> */}
-      <Terminal/>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Normal />} />
+        <Route path="/videos" element={<Videos />} />
+        <Route path="/terminal" element={<Terminal />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+
+    </BrowserRouter>
   )
 }
 
