@@ -6,7 +6,6 @@ export function Journey() {
         <>
             <section className="journey">
                 <h1>My Journey</h1>
-
                 <div className="journey-timeline">
                     {
                         JourneyData.map((item, index) => {
@@ -15,7 +14,7 @@ export function Journey() {
                                 <div key={item.id} className={`journey-timeline-item ${index % 2 === 0 ? 'journey-left' : 'journey-right'
                                     }`}>
                                     <div className="journey-card">
-                                        <span className='journey-time'>
+                                        <span className='journey-data'>
                                             <Icon className='journey-item-icon' />
                                             <span>{item.time}</span>
                                         </span>

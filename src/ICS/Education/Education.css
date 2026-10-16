@@ -1,7 +1,14 @@
-#education {
-    width: 100%;
-    text-align: center;
+.education h1 {
+    font-size: 48px;
 }
+
+.desc-education {
+    font-size: 18px;
+    text-align: center;
+    color: #1E2871;
+    font-weight: 500;
+}
+
 .education-timeline-layout {
     display: flex;
     width: 100%;
@@ -10,7 +17,7 @@
     align-items: flex-start;
 }
 
-.education-timeline{
+.education-timeline {
     width: 100px;
     position: relative;
     display: flex;
@@ -25,12 +32,12 @@
     height: 90%;
     background-color: #D7DCFD;
     left: 50%;
-    top: 50px;
+    top: 70px;
     transform: translateX(-50%);
 }
 
 .education-timeline-item {
-     min-height: 233px;
+    min-height: 233px;
     height: auto;
     display: flex;
     align-items: flex-start;
@@ -52,7 +59,7 @@
 
 .education-icon-circle svg {
     font-size: 40px;
-    color: #3041B0;
+    color: #1E2871;
 }
 
 .education-details {
@@ -64,44 +71,23 @@
     box-shadow: 3px 3px 8px #D7DCFD;
     width: 100%;
     text-align: left;
-    padding: 20px;
+    padding: 12px;
     margin-bottom: 20px;
-    height: 233px;
+    height: 230px;
 }
 
-h2 {
+.education-card h2 {
     color: #1E2871;
-    font-weight: 700;
-    font-size: x-large;
+    font-weight: 600;
+    font-size: 32px;
 }
 
-.education-details span {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-span p {
+.time-edu p,
+.time-edu svg,
+.educ-location svg,
+.educ-location span {
     color: #3041B0;
-    margin-top: 10px;
-}
-
-.education-institution {
-    color: #3041B0;
-    font-size: 20px;
-    font-weight: 700;
-    margin-block: 10px;
-}
-
-.education-info-icon {
-    font-size: 20px;
-    color: #3041B0;
-}
-
-.education-location{
-    color: #3041B0;
-    font-size: small;
-    font-weight: 400;
+    font-size: 14px;
 }
 
 .education-achievements-title {
@@ -109,10 +95,44 @@ span p {
     font-weight: 600;
 }
 
-.education-achievement-item{
+.education-achievement-item {
     margin-left: 16px;
     color: #3041B0;
     font-size: small;
-    font-weight: 450;
+    font-weight: 400;
     line-height: 25px;
+}
+
+.time-edu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.educ-location {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.educ-institution,
+.educ-city {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.educ-institution {
+    min-width: 0;
+}
+
+.educ-city {
+    flex-shrink: 0;
+}
+
+.education-institution {
+    color: #3041B0;
+    font-size: 20px;
+    font-weight: 500;
+    margin-block: 10px;
 }

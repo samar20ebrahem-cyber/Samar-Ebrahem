@@ -5,22 +5,22 @@
 
 #about h1 {
     color: #1E2871;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 600;
 }
 
 .about-subtitle {
-    color: #3041B0;
-    font-size: medium;
-    font-weight: 600;
-
+    color: #1E2871;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .about-audio-layout {
     border: 1px solid #D2D8FE;
     box-shadow: 3px 3px 8px #e2e5f5;
     padding: 5px 20px;
-    margin-top: 24px;
+    margin-top: 50px;
+    width: 100%;
 }
 
 .about-audio-player {

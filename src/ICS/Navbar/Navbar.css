@@ -1,4 +1,4 @@
-/* nav {
+ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -9,7 +9,7 @@
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 15px;
+    padding-inline: 2px;
     border-radius: 30px;
 }
 
@@ -27,30 +27,34 @@
 }
 
 .navbar__logo {
-    background: linear-gradient(to right, #5361C4, #313FAA, #1122A1);
+    background: linear-gradient(to right, #2a3bba, #2f3882, #2a3bba);
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 65px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
 }
 
+.navbar__logo:hover {
+ transform:rotate(360deg);
+}
 .navbar__logo p {
     color: white;
-    font-size: x-large;
+    font-size: 40px;
     font-weight: 700;
 }
 
 .navbar__identity .navbar__name {
-    font-size: medium;
     font-weight: 600;
     color: #1E2871;
+    font-size: 27px;
 }
 
 .navbar__role {
     color: #1E2871;
-    font-size: small;
+    font-size: 20px;
     font-weight: 500;
     opacity: 66%;
 }
@@ -67,11 +71,11 @@ ul {
 
 }
 
-li p {
+/* li p {
     color: #1E1E1E;
     font-size: medium;
     font-weight: 600;
-}
+} */
 
 .navbar__icon {
     font-size: 16px;
@@ -83,8 +87,12 @@ li p {
     border-radius: 10px;
     padding: 4px 16px;
     color: white;
+    transition: all 1s;
 }
 
+.navbar__link--active:hover {
+    background: #2a3bba;
+}
 .navbar__link--active p,
 .navbar__link--active span,
 .navbar__link--active .navbar__icon {
@@ -119,7 +127,7 @@ ul li a {
 
 
 
-/* Navbar */
+/* Navbar 
 nav {
     display: flex;
     align-items: center;
@@ -144,7 +152,7 @@ nav {
     border-radius: 30px;
 }
 
-/* Container */
+/* Container 
 .navbar__container {
     display: flex;
     align-items: center;
@@ -154,7 +162,7 @@ nav {
     min-width: 0;
 }
 
-/* Brand */
+/* Brand 
 .navbar__brand {
     display: flex;
     align-items: center;
@@ -203,7 +211,7 @@ nav {
     margin: 4px 0 0;
 }
 
-/* Navigation Links */
+/* Navigation Links 
 nav ul {
     display: flex;
     align-items: center;
@@ -255,7 +263,7 @@ nav ul li a span {
     flex-shrink: 0;
 }
 
-/* Active Link */
+/* Active Link 
 .navbar__link--active {
     background: #08136b;
 }
@@ -270,7 +278,7 @@ nav ul li a:hover:not(.navbar__link--active) {
     background: rgba(8, 19, 107, 0.08);
 }
 
-/* Tablets and small laptops */
+/* Tablets and small laptops 
 @media (max-width: 768px) {
     nav {
         padding: 12px 14px;
@@ -303,7 +311,7 @@ nav ul li a:hover:not(.navbar__link--active) {
     }
 }
 
-/* Mobile */
+/* Mobile 
 @media (max-width: 550px) {
     nav {
         width: calc(100% - 20px);
@@ -349,7 +357,7 @@ nav ul li a:hover:not(.navbar__link--active) {
     }
 }
 
-/* Very small phones */
+/* Very small phones 
 @media (max-width: 360px) {
     nav {
         padding: 10px;
