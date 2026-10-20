@@ -112,7 +112,7 @@ sam2026ar@gmail.com`
     }
     return (
         <>
-            <section className="terminal">
+            <div className="terminal">
                 <h1>Samar Ebrahem</h1>
                 <div className="body">
                     <p>~Welcome</p>
@@ -163,7 +163,7 @@ sam2026ar@gmail.com`
                         <input id="terminal-input" value={command} onChange={(e) => setCommand(e.target.value)} autoComplete="off" />
                     </form>
                 </div>
-            </section>
+            </div>
         </>
     )
 }

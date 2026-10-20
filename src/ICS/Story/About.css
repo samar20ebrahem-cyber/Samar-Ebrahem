@@ -1,9 +1,9 @@
-#about {
+.about {
     width: 100%;
     text-align: center;
 }
 
-#about h1 {
+.about h1 {
     color: #1E2871;
     font-size: 48px;
     font-weight: 600;
@@ -21,6 +21,7 @@
     padding: 5px 20px;
     margin-top: 50px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .about-audio-player {
@@ -50,9 +51,10 @@
     opacity: .5;
 }
 
-.about-play-button.clicked , .about-stop-button.clicked{
+.about-play-button.clicked, .about-stop-button.clicked {
     opacity: 1;
 }
+
 .about-stop-button.clicked {
     border: 1px solid red;
 }
@@ -95,4 +97,51 @@
     font-weight: 450;
     text-align: left;
     word-spacing: 1.5px;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:480px) {
+    .about h1 {
+        font-size: 32px;
+    }
+
+    .about-subtitle {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .about-audio-layout {
+        box-sizing: border-box;
+        padding: 0 10px;
+        margin-top: 25px;
+        width: 100%;
+    }
+
+    .about-play-button, .about-stop-button {
+        padding: 3px 5px;
+        gap: 4px;
+    }
+
+    .about-stop-label, .about-play-button p, .about-audio-time span,
+    .about-play-icon,
+    .about-stop-icon {
+        font-size: 10px;
+    }
+
+    .about-description-text {
+        font-size: 12px;
+        margin-bottom: 8px;
+        line-height: 1.7;
+    }
+
+    .about-audio-player {
+        box-sizing: border-box;
+        gap: 8px;
+        padding: 8px;
+        flex-wrap: wrap;
+    }
 }

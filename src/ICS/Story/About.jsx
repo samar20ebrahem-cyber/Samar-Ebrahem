@@ -12,7 +12,7 @@ export function About() {
     const handelGo = () => {
         audioRef.current.play()
         setPlayClicked(true)
-         setStopClicked(false)
+        setStopClicked(false)
     }
     const handleStop = () => {
         audioRef.current.pause()
@@ -27,7 +27,7 @@ export function About() {
     return (
 
         <>
-            <section id='about'>
+            <section className='about'>
                 <h1>About Me</h1>
                 <p className="about-subtitle">Born in 2007. Building software in 2026.</p>
                 <div className="about-audio-layout">
@@ -35,6 +35,10 @@ export function About() {
                         <button className={`about-play-button ${playClicked ? "clicked" : ""}`} onClick={handelGo}>
                             <FaPlay className='about-play-icon' />
                             <p>Play</p>
+                        </button>
+                         <button className={`about-stop-button ${stopClicked ? "clicked" : ""}`} onClick={handleStop}>
+                            <FaStop className={`about-stop-icon`} />
+                            <p className='about-stop-label'>Stop</p>
                         </button>
                         <audio src={Voice} ref={audioRef}
                             onLoadedMetadata={() => {
@@ -47,18 +51,18 @@ export function About() {
                         <span className='about-audio-time'>
                             <span>{formatTime(currentTime)}</span>
                             <span>/ {formatTime(duration)}</span></span>
-                         
-                        <button  className={`about-stop-button ${stopClicked ? "clicked" : ""}`} onClick={handleStop}>
-                            <FaStop className={`about-stop-icon` }/>
+
+                        {/* <button className={`about-stop-button ${stopClicked ? "clicked" : ""}`} onClick={handleStop}>
+                            <FaStop className={`about-stop-icon`} />
                             <p className='about-stop-label'>Stop</p>
-                        </button>
+                        </button> */}
                     </div>
                     <div className='about-description'>
                         <p className='about-description-text'>
-                            I have been passionate about software development since I began my journey in March 2026 by learning C++ and mastering the core fundamentals of front-end <br />
-                            development. By May, I started applying my knowledge through hands-on projects using HTML and CSS. In June, I built my first JavaScript project, learned Git <br />
-                            and GitHub, and began hosting my work publicly. Since then, I’ve expanded my tech stack to include Bootstrap and Tailwind CSS, and I transitioned into learning <br />
-                            React. My journey is built on continuous learning, problem-solving, and a dedication to crafting modern web applications—and I’m constantly evolving as a <br />
+                            I have been passionate about software development since I began my journey in March 2026 by learning C++ and mastering the core fundamentals of front-end
+                            development. By May, I started applying my knowledge through hands-on projects using HTML and CSS. In June, I built my first JavaScript project, learned Git
+                            and GitHub, and began hosting my work publicly. Since then, I’ve expanded my tech stack to include Bootstrap and Tailwind CSS, and I transitioned into learning
+                            React. My journey is built on continuous learning, problem-solving, and a dedication to crafting modern web applications—and I’m constantly evolving as a
                             developer!
                         </p>
                     </div>

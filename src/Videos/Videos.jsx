@@ -15,7 +15,7 @@ export function Videos() {
             icon: '',
             title: 'who is Samar?',
             desc: 'English video',
-            rtl: 'en'
+            dir: 'ltr'
         },
         {
             id: 2,
@@ -23,7 +23,7 @@ export function Videos() {
             icon: '',
             title: 'مين هي سمر؟',
             desc: 'الفيديو بالعربي',
-            rtl: 'ar'
+            dir: 'rtl'
         },
     ]
     return (
@@ -55,7 +55,7 @@ export function Videos() {
                                 </div>
 
                                 <div className="desc-vid">
-                                    <p>{vid.desc}</p>
+                                    <p dir={vid.dir}>{vid.desc}</p>
                                 </div>
                             </div>
                         ))
