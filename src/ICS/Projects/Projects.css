@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.projects h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #1E2871;
+    text-align: center;
+}
+
 .sub-title-projects {
     text-align: center;
     color: #3041B0;
@@ -104,6 +111,7 @@
     color: #1E2871;
     font-size: 20px;
 }
+
 .card-projects .links a:hover {
     background-color: #F0F2FF;
 }
@@ -113,6 +121,7 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
 @media (max-width: 600px) {
     .cards-projects {
         grid-template-columns: 1fr;

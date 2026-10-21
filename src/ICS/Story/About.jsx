@@ -36,10 +36,7 @@ export function About() {
                             <FaPlay className='about-play-icon' />
                             <p>Play</p>
                         </button>
-                         <button className={`about-stop-button ${stopClicked ? "clicked" : ""}`} onClick={handleStop}>
-                            <FaStop className={`about-stop-icon`} />
-                            <p className='about-stop-label'>Stop</p>
-                        </button>
+                        
                         <audio src={Voice} ref={audioRef}
                             onLoadedMetadata={() => {
                                 setDuration(audioRef.current.duration)
@@ -52,10 +49,10 @@ export function About() {
                             <span>{formatTime(currentTime)}</span>
                             <span>/ {formatTime(duration)}</span></span>
 
-                        {/* <button className={`about-stop-button ${stopClicked ? "clicked" : ""}`} onClick={handleStop}>
+                        <button className={`about-stop-button ${stopClicked ? "clicked" : ""}`} onClick={handleStop}>
                             <FaStop className={`about-stop-icon`} />
                             <p className='about-stop-label'>Stop</p>
-                        </button> */}
+                        </button>
                     </div>
                     <div className='about-description'>
                         <p className='about-description-text'>

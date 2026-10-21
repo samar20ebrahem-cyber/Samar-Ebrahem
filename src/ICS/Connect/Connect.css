@@ -6,12 +6,17 @@
 
 .connect h1 {
     color: #1E2871;
+     font-size: 48px;
+    font-weight: 600;
+    color: #1E2871;
+    text-align: center;
 }
 
-.simple{
+.simple {
     text-align: center;
     color: #1E2871;
 }
+
 .cards-connect {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -34,9 +39,10 @@
     display: flex;
     gap: 8px;
     margin-block: 12px;
+    align-items: center;
 }
 
-.card-Connect h3 {
+.card-connect h3 {
     color: #1E2871;
     font-size: 24px;
     font-weight: 500;
@@ -68,6 +74,10 @@
     color: #EBEDFF;
 }
 
+.connect button:hover .arrow {
+    color: #EBEDFF;
+}
+
 .connect button a {
     margin-right: 10px;
 }
@@ -78,7 +88,11 @@
 
 @media (max-width:768px) {
     .cards-connect {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-connect {
+        min-width: 100%;
     }
 
 }

@@ -10,7 +10,7 @@ export function Connect() {
                     {
                         ConnectData.map((item) => {
                             const Icon = item.icon
-const Arrow = item.arrow
+                            const Arrow = item.arrow
                             return (
                                 <div key={item.id} className='card-connect'>
                                     <div className="title-connect">
@@ -21,7 +21,7 @@ const Arrow = item.arrow
                                     <p className='src-button'>{item.srcbutton}</p>
                                     <button>
                                         <a href={item.link}>{item.titlebutton}</a>
-                                        <Arrow/>
+                                        <Arrow className='arrow'/>
                                     </button>
                                 </div>
                             )

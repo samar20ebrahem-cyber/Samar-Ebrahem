@@ -1,25 +1,25 @@
 import { FaFacebook, FaGithub, FaExternalLinkAlt, FaEnvelope, FaLinkedin } from "react-icons/fa"
-
+import { SiCodeforces } from 'react-icons/si'
 export const ConnectData = [
     {
         id: 1,
-        title: 'Email',
-        desc: 'Have a project or an idea? Send me a message and I will get back to you as soon as possible.',
-        link: 'mailto:sam2026ar@gmail.com',
-        titlebutton: 'Send Email',
-        srcbutton: 'sam2026ar@gmail.com',
-        icon: FaEnvelope,
-        arrow:FaExternalLinkAlt,
-    },
-    {
-        id: 2,
         title: 'LinkedIn',
         desc: 'Let us connect professionally. Follow my journey and my latest updates.',
         link: 'https://www.linkedin.com/in/samar-ebrahem-9953b13b6',
         titlebutton: 'Connect on LinkedIn',
         srcbutton: 'linkedin.com/in/samar-ebrahem-9953b13b6',
         icon: FaLinkedin,
-        arrow:FaExternalLinkAlt,
+        arrow: FaExternalLinkAlt,
+    },
+    {
+        id: 2,
+        title: 'Email',
+        desc: 'Have a project or an idea? Send me a message and I will get back to you as soon as possible.',
+        link: 'mailto:sam2026ar@gmail.com',
+        titlebutton: 'Send Email',
+        srcbutton: 'sam2026ar@gmail.com',
+        icon: FaEnvelope,
+        arrow: FaExternalLinkAlt,
     },
     {
         id: 3,
@@ -29,16 +29,27 @@ export const ConnectData = [
         titlebutton: 'View my GitHub',
         srcbutton: 'github.com/samar20ebrahem-cyber',
         icon: FaGithub,
-        arrow:FaExternalLinkAlt,
+        arrow: FaExternalLinkAlt,
     },
+
     {
         id: 4,
-        title: 'Facebook',
-        desc: 'Prefer a quick chat? Message me directly on WhatsApp.',
-        link: 'nnnnnnnnnnnnn',
-        titlebutton: 'Follow on  Facebook',
-        srcbutton: 'nnnnnnnnnnnnn',
-        icon: FaFacebook,
-        arrow:FaExternalLinkAlt,
+        title: 'Codeforces',
+        desc: 'Solving 70 programming problems using C++, improving my problem-solving and algorithmic thinking skills.',
+        link: 'https://codeforces.com/profile/samar_r-s-t',
+        titlebutton: 'View My Codeforces ',
+        srcbutton: '/samar_r-s-t',
+        icon: SiCodeforces,
+        arrow: FaExternalLinkAlt,
     },
+    // {
+    //     id: 5,
+    //     title: 'Facebook',
+    //     desc: 'Follow my updates and connect with me on Facebook.',
+    //     link: 'nnnnnnnnnnnnn',
+    //     titlebutton: 'Follow on  Facebook',
+    //     srcbutton: 'nnnnnnnnnnnnn',
+    //     icon: FaFacebook,
+    //     arrow: FaExternalLinkAlt,
+    // },
 ]

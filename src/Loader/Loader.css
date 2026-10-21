@@ -1,0 +1,126 @@
+.loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F3FC;
+    font-family: 'Outfit', sans-serif;
+}
+
+.loader__content {
+    width: min(85%, 360px);
+    text-align: center;
+    animation: loaderAppear 0.7s ease both;
+}
+
+.loader__logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2837AA;
+    border-radius: 28px;
+    color: #1E2871;
+    font-size: 64px;
+    font-weight: 700;
+    box-shadow: 0 0 0 8px #2837AA0D;
+    animation: logoFloat 2s ease-in-out infinite;
+}
+
+.loader__logo span {
+    color: #5265ED;
+}
+
+.loader__name {
+    margin: 0;
+    color: #1E2871;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.loader__role {
+    margin: 10px 0 30px;
+    color: #5265ED;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.loader__bar {
+    width: 100%;
+    height: 4px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #D2D8FE;
+}
+
+.loader__progress {
+    width: 40%;
+    height: 100%;
+    border-radius: inherit;
+    background: #2837AA;
+    animation: loaderProgress 6s ease-in-out forwards;
+}
+
+.loader__text {
+    margin-top: 16px;
+    color: #68709C;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+@keyframes loaderProgress {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes loaderAppear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .loader__logo {
+        width: 80px;
+        height: 80px;
+        font-size: 52px;
+        border-radius: 22px;
+    }
+
+    .loader__name {
+        font-size: 21px;
+        letter-spacing: 1px;
+    }
+
+    .loader__role {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+}

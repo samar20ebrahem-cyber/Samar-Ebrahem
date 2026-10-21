@@ -1,21 +1,31 @@
 @import "tailwindcss";
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     width: 96%;
     margin-inline: auto;
     font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-section{
+
+section {
     margin-bottom: 80px;
-    width: 100%;
+    min-width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-@media screen and (max-width:480px){
-     body{
-          overflow-x: hidden;
-     }
+
+@media screen and (max-width:480px) {
+    body {
+        overflow-x: hidden;
+    }
 }

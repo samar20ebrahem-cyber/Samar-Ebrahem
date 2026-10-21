@@ -7,20 +7,38 @@ export function Header() {
             <section className='home'>
                 <h1>Samar Ebrahem </h1>
                 <p className='hero-role'>Front-end Developer</p>
-                <p className='hero-description'>Passionate Frontend Developer,Lifelong learner, Building clean, 
+                <p className='hero-description'>Passionate Frontend Developer,Lifelong learner, Building clean,
                     Modern and use-focused web experiences.</p>
                 <div className='social-links'>
-                    <div className='social-link'>
+                    <a
+                        className='social-link'
+                        href="mailto:sam2026ar@gamil.com"
+                        aria-label="Send me an email"
+                    >
                         <FaEnvelope className='social-icon' />
-                    </div>
-                    <div className='social-link'>
+                    </a>
+                    <a className='social-link'
+                        href="https://www.linkedin.com/in/samar-ebrahem-9953b13b6/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn Profile">
                         <FaLinkedin className='social-icon' />
-                    </div>
-                    <div className='social-link'>
+                    </a>
+                    <a className='social-link'
+                        href="https://github.com/samar20ebrahem-cyber"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub Profile"
+                    >
                         <FaGithub className='social-icon' />
-                    </div>
+                    </a>
                 </div>
-                <button className='work-button'>
+                <button className='work-button'
+                    onClick={() => {
+                        document.getElementById('projects')?.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }}>
                     <p>View My Work</p>
                     <FaExternalLinkAlt />
                 </button>

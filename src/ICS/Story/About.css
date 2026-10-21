@@ -100,7 +100,23 @@
 }
 
 
+/* order */
 
+.about-play-button {
+    order: 1;
+}
+
+.about-audio-progress {
+    order: 2;
+}
+
+.about-audio-time {
+    order: 3;
+}
+
+.about-stop-button {
+    order: 4;
+}
 
 /* RESPONSIVE */
 
@@ -143,5 +159,18 @@
         gap: 8px;
         padding: 8px;
         flex-wrap: wrap;
+    }
+
+    .about-stop-button {
+        order: 2;
+    }
+
+    .about-audio-time {
+        order: 4;
+    }
+
+    .about-audio-progress {
+        order: 3;
+        flex: 1;
     }
 }

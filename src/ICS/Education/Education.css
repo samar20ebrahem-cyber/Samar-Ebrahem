@@ -1,5 +1,6 @@
 .education h1 {
     font-size: 48px;
+    font-weight: 600;
 }
 
 .desc-education {
@@ -11,10 +12,10 @@
 
 .education-timeline-layout {
     display: flex;
-    width: 100%;
+    min-width: 100%;
     margin: 40px auto;
     gap: 50px;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 .education-timeline {
@@ -23,21 +24,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .education-timeline::before {
     content: "";
     position: absolute;
     width: 2px;
-    height: 90%;
+    height: 100%;
     background-color: #D7DCFD;
     left: 50%;
-    top: 70px;
+    top: 41px;
     transform: translateX(-50%);
 }
 
 .education-timeline-item {
-    min-height: 233px;
+    min-height: 520px;
+    flex-shrink: 0;
     height: auto;
     display: flex;
     align-items: flex-start;
@@ -55,6 +58,7 @@
     justify-content: center;
     position: relative;
     z-index: 2;
+    flex-shrink: 0;
 }
 
 .education-icon-circle svg {
@@ -73,13 +77,13 @@
     text-align: left;
     padding: 12px;
     margin-bottom: 20px;
-    height: 230px;
+    min-height: 230px;
 }
 
 .education-card h2 {
     color: #1E2871;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .time-edu p,
@@ -96,7 +100,7 @@
 }
 
 .education-achievement-item {
-    margin-left: 16px;
+    margin-left: 18px;
     color: #3041B0;
     font-size: small;
     font-weight: 400;
@@ -135,4 +139,17 @@
     font-size: 20px;
     font-weight: 500;
     margin-block: 10px;
+}
+.education-card ul {
+    border: none;
+}
+
+@media screen and (max-width:768px){
+     .education-timeline-layout{
+         gap:40px
+         
+     }
+     .education-details{
+        width: 90%;
+     }
 }
