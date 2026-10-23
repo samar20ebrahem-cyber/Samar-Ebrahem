@@ -41,6 +41,7 @@
     background: white;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     animation: 2s education infinite;
+    height: 160px;
 }
 
 @keyframes education {
@@ -109,4 +110,41 @@
     color: #4B56B5;
     line-height: 1.6;
     font-size: 12px;
+}
+
+@media screen and (max-width:768px){
+    .journey-timeline::before{
+        left: 30px;
+        transform: translateX(-50%);
+        top:8px
+    }
+     .journey-timeline-item {
+        justify-content: flex-start;
+        padding-left: 70px;
+        box-sizing: border-box;
+        margin-bottom: 25px;
+    }
+    .journey-icon-circle {
+        left: 30px;
+        top: 30px;
+        width: 45px;
+        height: 45px;
+        transform: translate(-50%, -50%);
+    }
+    .journey-card{
+         width: 100%;
+        height: auto;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 15px;
+        margin-top: 8px;
+    }
+    .journey-card h2{
+         font-size:20px;
+         font-weight: 400;
+    }
+    .journey-data p{
+       font-size: 14px;
+    }
+
 }

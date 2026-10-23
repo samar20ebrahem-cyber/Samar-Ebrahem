@@ -12,7 +12,7 @@
 
 .education-timeline-layout {
     display: flex;
-    min-width: 100%;
+    max-width: 100%;
     margin: 40px auto;
     gap: 50px;
     align-items: stretch;
@@ -48,8 +48,10 @@
 }
 
 .education-icon-circle {
-    width: 82px;
-    height: 82px;
+    width: 66px;
+    height: 66px;
+    max-width: 82px;
+    max-height: 82px;
     border: 3px solid #D7DCFD;
     border-radius: 50%;
     background-color: white;
@@ -68,6 +70,7 @@
 
 .education-details {
     flex: 1;
+    min-width: 0;
 }
 
 .education-card {
@@ -152,4 +155,5 @@
      .education-details{
         width: 90%;
      }
-}
+} 
+

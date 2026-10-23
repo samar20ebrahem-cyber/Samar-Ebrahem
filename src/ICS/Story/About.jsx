@@ -27,7 +27,7 @@ export function About() {
     return (
 
         <>
-            <section className='about'>
+            <section className='about' id='about'>
                 <h1>About Me</h1>
                 <p className="about-subtitle">Born in 2007. Building software in 2026.</p>
                 <div className="about-audio-layout">

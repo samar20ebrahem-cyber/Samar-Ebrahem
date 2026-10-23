@@ -4,7 +4,7 @@ import { ProjectsData } from './ProjectsData.js'
 export function Projects() {
     return (
         <>
-            <section id='projects'>
+            <section id='projects' className="projects">
                 <h1>Projects</h1>
                 <p className='sub-title-projects'>Showcasing my work across personal projects</p>
                 <div className="cards-projects">

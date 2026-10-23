@@ -4,7 +4,7 @@ import { GoDotFill } from 'react-icons/go'
 export function Education() {
     return (
         <>
-            <section className='education'>
+            <section className='education' id='education'>
                 <h1>Education</h1>
                 <p className='desc-education'>My academic journey.</p>
                 <div className="education-timeline-layout">
@@ -69,7 +69,8 @@ export function Education() {
                             </div>
                             <p className='education-achievements-title'>Key Achievements:</p>
                             <ul>
-                                <li className='education-achievement-item'> Successfully completed secondary education in 2025 after beginning the program in 2023, building a strong academic foundation for pursuing higher education 
+                                <li className='education-achievement-item'> Successfully completed secondary education in 2025 after beginning the program in 2023, building a strong academic <br />
+                                 foundation for pursuing higher education 
                                     in Computer Science.</li>
                             </ul>
                         </div>

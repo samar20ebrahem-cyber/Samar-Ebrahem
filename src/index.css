@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 * {
     margin: 0;
@@ -24,8 +24,16 @@ section {
     justify-content: center;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
     }
-}
+    section {
+        min-height: 100%;
+        margin-bottom: 100px;
+    }
+} 
+
+
+
+

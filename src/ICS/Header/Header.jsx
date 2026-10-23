@@ -4,7 +4,7 @@ export function Header() {
     return (
         <>
 
-            <section className='home'>
+            <section className='home' id='home'>
                 <h1>Samar Ebrahem </h1>
                 <p className='hero-role'>Front-end Developer</p>
                 <p className='hero-description'>Passionate Frontend Developer,Lifelong learner, Building clean,

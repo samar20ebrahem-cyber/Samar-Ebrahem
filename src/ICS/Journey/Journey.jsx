@@ -4,7 +4,7 @@ import { FaRoute } from "react-icons/fa"
 export function Journey() {
     return (
         <>
-            <section className="journey">
+            <section className="journey" id='experience'>
                 <h1>My Journey</h1>
                 <div className="journey-timeline">
                     {
@@ -14,10 +14,10 @@ export function Journey() {
                                 <div key={item.id} className={`journey-timeline-item ${index % 2 === 0 ? 'journey-left' : 'journey-right'
                                     }`}>
                                     <div className="journey-card">
-                                        <span className='journey-data'>
+                                        <div className='journey-data'>
                                             <Icon className='journey-item-icon' />
-                                            <span>{item.time}</span>
-                                        </span>
+                                            <p>{item.time}</p>
+                                        </div>
                                         <h2>{item.titel}</h2>
                                         <p>{item.desc}</p>
                                     </div>

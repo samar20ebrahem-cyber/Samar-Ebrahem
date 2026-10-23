@@ -4,7 +4,7 @@ import { useState } from "react"
 export function Terminal() {
     const [command, setCommand] = useState("")
     const [terminal, setTerminal] = useState([])
-
+    const [isLoading, setIsLoading] = useState(false)
     const commands = {
         help: `Available commands:
 about, journey, education, skills, projects, contact`,
@@ -94,21 +94,25 @@ sam2026ar@gmail.com`
     function handleCommand(e) {
         e.preventDefault()
         const value = command.trim().toLowerCase()
-        if (!value) return
+        if (!value || isLoading) return
         if (value === 'clear') {
             setCommand('')
             setTerminal([])
             return
         }
-        const output = commands[value] || `Command not found: ${value}`
-        setTerminal((prev) => [
-            ...prev,
-            {
-                command: value,
-                output: output
-            }
-        ])
+        setIsLoading(true)
         setCommand('')
+        setTimeout(() => {
+            const output = commands[value] || `Command not found: ${value}`
+            setTerminal((prev) => [
+                ...prev,
+                {
+                    command: value,
+                    output: output
+                }
+            ])
+            setIsLoading(false)
+        }, 1500)
     }
     return (
         <>
@@ -117,6 +121,8 @@ sam2026ar@gmail.com`
                 <div className="body">
                     <p>~Welcome</p>
                     <p>~Help</p>
+
+
                     {
                         terminal.map((item, index) => {
                             return (
@@ -127,6 +133,12 @@ sam2026ar@gmail.com`
                                         </span> {" "}
                                         {item.command}
                                     </p>
+                                    {isLoading && index === terminal.length - 1 && (
+                                        <div className="terminal-loading">
+                                            <span className="loading-dot"></span>
+                                            Processing command...
+                                        </div>
+                                    )}
                                     <p className="output">{item.command === 'contact' ? (
                                         <div className="contact-links">
                                             <p>
@@ -150,7 +162,9 @@ sam2026ar@gmail.com`
                                             </p>
                                         </div>
                                     ) : (
-                                        <p className="output"> {item.output}</p>
+                                        <p className={`output ${!commands[item.command] ? 'error' : ''}`}>
+                                            {item.output}
+                                        </p>
                                     )}
                                     </p>
                                 </div>

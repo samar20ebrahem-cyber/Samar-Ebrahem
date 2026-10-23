@@ -3,7 +3,7 @@ import { ConnectData } from './ConnectData.js'
 export function Connect() {
     return (
         <>
-            <section className='connect'>
+            <section className='connect' id='contact'>
                 <h1>Let's Connect& Follow Me</h1>
                 <p className='simple'>Showcasing my work across personal projects</p>
                 <div className='cards-connect'>
