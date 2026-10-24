@@ -33,7 +33,7 @@
     gap: 10px;
     margin-top: 10px;
     border: 1px solid #2837AA;
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
     background: #F8F9FF;
     margin-bottom: 8px;
 }
@@ -98,7 +98,10 @@
     text-align: left;
     word-spacing: 1.5px;
 }
-
+.about-description-text{
+    padding-bottom: 10px;
+    
+}
 
 /* order */
 
@@ -133,7 +136,7 @@
     .about-audio-layout {
         box-sizing: border-box;
         padding: 0 10px;
-        margin-top: 25px;
+        margin-top: 35px;
         width: 100%;
     }
 
@@ -159,6 +162,7 @@
         gap: 8px;
         padding: 8px;
         flex-wrap: wrap;
+        border-radius: 15px 15px 0 0;
     }
 
     .about-stop-button {
@@ -167,6 +171,7 @@
 
     .about-audio-time {
         order: 4;
+        margin-bottom: 5px;
     }
 
     .about-audio-progress {

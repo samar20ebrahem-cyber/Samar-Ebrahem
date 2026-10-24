@@ -19,7 +19,7 @@ export function BelowNavbar() {
         { id: "education", label: "Education", icon: HiAcademicCap },
         { id: "skills", label: "Skills", icon: HiCodeBracket },
         { id: "projects", label: "Projects", icon: HiFolder },
-        { id: "contact", label: "Contact", icon: HiEnvelope }
+        { id: "connect", label: "Connect", icon: HiEnvelope }
     ]
 
     const [activeSection, setActiveSection] = useState("home")

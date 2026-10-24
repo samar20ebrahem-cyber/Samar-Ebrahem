@@ -112,18 +112,24 @@
     font-size: 12px;
 }
 
-@media screen and (max-width:768px){
-    .journey-timeline::before{
+@media screen and (max-width:768px) {
+    .journey h1 {
+        font-size: 32px;
+    }
+
+    .journey-timeline::before {
         left: 30px;
         transform: translateX(-50%);
-        top:8px
+        top: 8px
     }
-     .journey-timeline-item {
+
+    .journey-timeline-item {
         justify-content: flex-start;
         padding-left: 70px;
         box-sizing: border-box;
         margin-bottom: 25px;
     }
+
     .journey-icon-circle {
         left: 30px;
         top: 30px;
@@ -131,20 +137,25 @@
         height: 45px;
         transform: translate(-50%, -50%);
     }
-    .journey-card{
-         width: 100%;
+
+    .journey-card {
+        width: 100%;
         height: auto;
         min-width: 0;
         box-sizing: border-box;
         padding: 15px;
         margin-top: 8px;
+        animation: none;
+        box-shadow: 9px 8px 20px rgba(15, 51, 228, 0.08);
     }
-    .journey-card h2{
-         font-size:20px;
-         font-weight: 400;
+
+    .journey-card h2 {
+        font-size: 20px;
+        font-weight: 400;
     }
-    .journey-data p{
-       font-size: 14px;
+
+    .journey-data p {
+        font-size: 14px;
     }
 
 }

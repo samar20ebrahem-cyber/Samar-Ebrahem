@@ -1,6 +1,6 @@
-#skills {
+/* .skills {
     margin-bottom: 110px;
-}
+} */
 
 h1 {
     font-size: 48px;
@@ -60,4 +60,14 @@ h1 {
     color: #1E2871;
     margin: 8px;
     font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+    .skills h1 {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+    .p1{
+        font-size: 14px;
+    }
 }

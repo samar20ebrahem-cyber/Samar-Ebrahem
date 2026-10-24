@@ -6,7 +6,7 @@
 
 .connect h1 {
     color: #1E2871;
-     font-size: 48px;
+    font-size: 48px;
     font-weight: 600;
     color: #1E2871;
     text-align: center;
@@ -80,6 +80,12 @@
 
 .connect button a {
     margin-right: 10px;
+    text-decoration: none;
+    color: #1E2871;
+}
+
+.connect button:hover a {
+    color: #EBEDFF;
 }
 
 .connect button svg {
@@ -95,4 +101,11 @@
         min-width: 100%;
     }
 
+    .connect h1 {
+        font-size: 32px;
+    }
+
+    .connect button {
+        margin-top: 45px;
+    }
 }

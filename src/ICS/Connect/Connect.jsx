@@ -3,7 +3,7 @@ import { ConnectData } from './ConnectData.js'
 export function Connect() {
     return (
         <>
-            <section className='connect' id='contact'>
+            <section className='connect' id='connect'>
                 <h1>Let's Connect& Follow Me</h1>
                 <p className='simple'>Showcasing my work across personal projects</p>
                 <div className='cards-connect'>
@@ -21,7 +21,7 @@ export function Connect() {
                                     <p className='src-button'>{item.srcbutton}</p>
                                     <button>
                                         <a href={item.link}>{item.titlebutton}</a>
-                                        <Arrow className='arrow'/>
+                                        <Arrow className='arrow' />
                                     </button>
                                 </div>
                             )

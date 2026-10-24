@@ -37,8 +37,11 @@
     background-color: #F3F3FC;
     border-radius: 50%;
     border: solid 2px #1E30B6;
-    padding: 14px;
+    padding: 16px 20px;
     transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-link:hover {
@@ -47,7 +50,7 @@
 
 .social-icon {
     color: #2837AA;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .work-button {
@@ -62,6 +65,7 @@
     border-radius: 8px;
     transition: all 1s;
     cursor: pointer;
+    border: none;
 }
 
 .work-button:hover {
@@ -71,23 +75,37 @@
 /* Mobile */
 @media screen and (max-width: 768px) {
     .home {
-        padding-inline: auto;       
+        padding-inline: auto;
     }
 
     .home h1 {
         font-size: 34px;
+        margin-block: 10px;
     }
 
     .hero-role {
         font-size: medium;
+        margin-bottom: 10px;
     }
 
     .hero-description {
         font-size: 16px;
+        margin-bottom: 10px;
     }
 
     .work-button {
-        left:calc(30%);
+        left: calc(30%);
         top: 65%;
+        width: 230px;
+        margin-top: 20px;
+        font-size: 22px;
+    }
+
+    .social-link {
+        height: 40px;
+        width: 40px;
+    }
+    .social-icon {
+        font-size: 60px;
     }
 }

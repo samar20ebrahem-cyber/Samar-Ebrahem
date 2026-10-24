@@ -7,8 +7,8 @@ export function Header() {
             <section className='home' id='home'>
                 <h1>Samar Ebrahem </h1>
                 <p className='hero-role'>Front-end Developer</p>
-                <p className='hero-description'>Passionate Frontend Developer,Lifelong learner, Building clean,
-                    Modern and use-focused web experiences.</p>
+                <p className='hero-description'>Passionate Frontend Developer,Lifelong learner , <br /> Building clean,
+                    Modern and use-focused <br /> web  experiences.</p>
                 <div className='social-links'>
                     <a
                         className='social-link'

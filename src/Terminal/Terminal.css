@@ -63,13 +63,13 @@
 
 .terminal input {
     background: transparent;
-    color: rgb(4, 48, 223);;
+    color:#F9FAFb;
     border: none;
     outline: none;
     font: inherit;
     flex: 1;
     min-width: 0;
-    caret-color: #2dcb67;
+    caret-color: #4ADE80;
 }
 
 .terminal label {
@@ -80,10 +80,12 @@
 .output.error {
     color: red;
 }
-@media (max-width: 600px) {
+
+@media (max-width: 768px) {
     .terminal {
         padding: 16px;
         margin-top: 130px;
+        max-height: 750px;
     }
 
     .terminal h1 {
@@ -93,7 +95,7 @@
     body {
         scroll-x: none;
     }
-    
+
 }
 
 
@@ -126,7 +128,3 @@
         transform: scale(1.2);
     }
 }
-
-
-
-

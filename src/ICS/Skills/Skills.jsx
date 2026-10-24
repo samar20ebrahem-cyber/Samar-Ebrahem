@@ -3,7 +3,7 @@ import { SkillsData } from './SkillsData.js'
 export function Skills() {
     return (
         <>
-            <section id='skills'>
+            <section id='skills' className='skills'>
                 <h1>Skills</h1>
                 <p className='p1'>Technologies and tools I work with to bring ideas to life</p>
                 <div className='cards'>

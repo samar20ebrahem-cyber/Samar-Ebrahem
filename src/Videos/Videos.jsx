@@ -28,7 +28,8 @@ export function Videos() {
     ]
     return (
         <>
-            <section>
+            <section className='videos'>
+                <h1> My Videos</h1>
                 <div className='card-videos'>
                     {
                         VideosData.map((vid) => (
