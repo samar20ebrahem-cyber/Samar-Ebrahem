@@ -23,7 +23,24 @@ export function BelowNavbar() {
     ]
 
     const [activeSection, setActiveSection] = useState("home")
+    useEffect(() => {
+        const sections = document.querySelectorAll('section[id]')
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActiveSection(entry.target.id);
+                    }
+                })
+            },
+            {
+                rootMargin: "-35% 0px -55% 0px"
+            }
+        )
+        sections.forEach((section) => observer.observe(section));
 
+        return () => observer.disconnect();
+    }, [])
     return (
         <div className="below-navbar-container">
             {navItems.map(({ id, label, icon: Icon }) => (
