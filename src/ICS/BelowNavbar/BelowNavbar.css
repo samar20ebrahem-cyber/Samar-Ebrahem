@@ -27,16 +27,12 @@
     background-color: transparent;
     width: 40px;
     padding: 0;
-    height: 40px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* 
-.below-navbar-link:hover {
-    background-color: #cacaf0;
-} */
 
 .below-navbar-link svg {
     font-size: 26px;
@@ -51,6 +47,10 @@ html {
 .below-navbar-link-active {
     background-color: #1E2871;
     border: 1px solid #1E2871;
+    transform: translateY(-5px);
+    box-shadow:
+        0 5px 0 #151F80,
+        0 8px 14px rgba(30, 48, 182, 0.3);
 }
 
 .below-navbar-link-active svg {
@@ -68,6 +68,7 @@ html {
         width: 30px;
         height: 30px;
     }
+
     .below-navbar-link svg {
         font-size: 20px;
     }

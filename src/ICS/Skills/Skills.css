@@ -1,7 +1,3 @@
-/* .skills {
-    margin-bottom: 110px;
-} */
-
 h1 {
     font-size: 48px;
     font-weight: 600;
@@ -12,13 +8,13 @@ h1 {
 .p1 {
     font-size: 22px;
     font-weight: 500;
-    color: #3041B0;
+   color: #1E2871;
     text-align: center;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     width: 100%;
     gap: 20px;
     margin-top: 40px;
@@ -62,12 +58,21 @@ h1 {
     font-weight: 600;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:600px) {
     .skills h1 {
         font-size: 32px;
         margin-bottom: 8px;
     }
     .p1{
         font-size: 14px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:600px){
+      .cards{
+        grid-template-columns: repeat(4, minmax(160px, 1fr));
     }
 }

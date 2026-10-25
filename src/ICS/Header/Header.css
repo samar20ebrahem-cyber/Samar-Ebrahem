@@ -29,19 +29,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 14px;
     padding: 20px;
 }
 
 .social-link {
     background-color: #F3F3FC;
     border-radius: 50%;
-    border: solid 2px #1E30B6;
-    padding: 16px 20px;
+    border: solid 1px #1E30B6;
+    padding: 12px ;
     transition: all 1s;
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: #1E30B6 1px solid;
+    outline-offset: -4px;
 }
 
 .social-link:hover {
@@ -59,13 +61,16 @@
     justify-content: center;
     background: #1E2871;
     color: #feffff;
-    padding: 10px 20px;
+    padding: 14px 20px;
     gap: 10px;
-    width: 220px;
+    width: 240px;
     border-radius: 8px;
     transition: all 1s;
     cursor: pointer;
     border: none;
+}
+.work-button p{
+    font-size: 20px;
 }
 
 .work-button:hover {

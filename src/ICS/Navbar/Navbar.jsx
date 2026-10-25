@@ -31,7 +31,7 @@ export function Navbar() {
                                 onClick={() => setMenuOpen(false)}
                                 end
                                 className={({ isActive }) =>
-                                    isActive ? "navbar__link--active" : ""} >
+                                    isActive ? "navbar__link--active" : ""}>
                                 <FaRegFileAlt className="navbar__icon" />
                                 <span> Normal</span>
                             </NavLink>
