@@ -112,7 +112,7 @@ sam2026ar@gmail.com`
                 }
             ])
             setIsLoading(false)
-        }, 1500)
+        }, 500)
     }
     return (
         <>

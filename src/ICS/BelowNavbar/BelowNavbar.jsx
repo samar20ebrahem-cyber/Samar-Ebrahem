@@ -4,7 +4,6 @@ import {
     HiCodeBracket,
     HiFolder,
     HiEnvelope,
-    HiAcademicCap,
     HiBriefcase
 } from "react-icons/hi2"
 
@@ -16,7 +15,7 @@ export function BelowNavbar() {
         { id: "home", label: "Home", icon: HiHome },
         { id: "about", label: "About", icon: HiUser },
         { id: "experience", label: "Experience", icon: HiBriefcase },
-        { id: "education", label: "Education", icon: HiAcademicCap },
+        // { id: "education", label: "Education", icon: HiAcademicCap },
         { id: "skills", label: "Skills", icon: HiCodeBracket },
         { id: "projects", label: "Projects", icon: HiFolder },
         { id: "connect", label: "Connect", icon: HiEnvelope }

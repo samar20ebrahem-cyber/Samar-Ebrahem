@@ -28,7 +28,7 @@ h1 {
     height: 120px;
     border-radius: 8px;
     transition: all 1s;
-    animation: scale infinite 3s;
+    /* animation: scale infinite 3s; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +37,7 @@ h1 {
 
 /* animation on card skills*/
 
-@keyframes scale {
+/* @keyframes scale {
     0% {
         transform: scale(0);
     }
@@ -45,7 +45,7 @@ h1 {
     100% {
         transform: scale(1);
     }
-}
+} */
 
 .card:hover {
     animation: none;
@@ -67,12 +67,12 @@ h1 {
         font-size: 14px;
     }
     .cards{
-        grid-template-columns: repeat(2, minmax(160px, 1fr));
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
     }
 }
 
 @media screen and (max-width:900px) and (min-width:600px){
       .cards{
-        grid-template-columns: repeat(4, minmax(160px, 1fr));
+        grid-template-columns: repeat(4, minmax(140px, 1fr));
     }
 }

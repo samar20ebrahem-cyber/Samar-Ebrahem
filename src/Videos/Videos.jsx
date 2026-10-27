@@ -4,7 +4,8 @@ import { useState } from 'react';
 
 import englishVideo from '../assets/SamarEn.mp4';
 import arabicVideo from '../assets/SamarAr.mp4'
-
+import englishPoster from '../assets/images/SamarEnPo.png';
+import arabicPoster from '../assets/images/SamarArPo.png';
 
 export function Videos() {
     const [activeVideo, setActiveVideo] = useState(null);
@@ -15,7 +16,8 @@ export function Videos() {
             icon: '',
             title: 'who is Samar?',
             desc: 'English video',
-            dir: 'ltr'
+            dir: 'ltr',
+            poster: englishPoster,
         },
         {
             id: 2,
@@ -23,7 +25,8 @@ export function Videos() {
             icon: '',
             title: 'مين هي سمر؟',
             desc: 'الفيديو بالعربي',
-            dir: 'rtl'
+            dir: 'rtl',
+            poster: arabicPoster,
         },
     ]
     return (
@@ -34,7 +37,11 @@ export function Videos() {
                     {
                         VideosData.map((vid) => (
                             <div className="card-vid" key={vid.id}>
-                                <div className="blow">
+                                <div className="blow" style={{
+                                    backgroundImage: `url(${vid.poster})`,
+                                    backgroundSize: 'cover',
+                                    backgroundPosition: 'center'
+                                }}>
                                     {
                                         activeVideo === vid.id ? (
                                             <video
@@ -42,12 +49,18 @@ export function Videos() {
                                                 controls
                                                 autoPlay
                                                 width="100%"
+                                                poster={vid.poster}
                                             />
                                         ) : (
                                             <button
                                                 className="icon-dev"
                                                 onClick={() => setActiveVideo(vid.id)}
                                                 aria-label={`Play ${vid.title}`}
+                                                style={{
+                                                    backgroundImage: `url(${vid.poster})`,
+                                                    backgroundSize: 'cover',
+                                                    backgroundPosition: 'center'
+                                                }}
                                             >
                                                 <FaPlay />
                                             </button>
@@ -56,7 +69,7 @@ export function Videos() {
                                 </div>
 
                                 <div className="desc-vid">
-                                    <p dir={vid.dir}>{vid.desc}</p>
+                                    {/* <p dir={vid.dir}>{vid.desc}</p> */}
                                 </div>
                             </div>
                         ))
