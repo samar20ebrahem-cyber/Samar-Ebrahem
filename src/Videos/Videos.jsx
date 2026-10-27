@@ -4,8 +4,8 @@ import { useState } from 'react';
 
 import englishVideo from '../assets/SamarEn.mp4';
 import arabicVideo from '../assets/SamarAr.mp4'
-import englishPoster from './../assets/images/SamarEnPo.png';
-import arabicPoster from './../assets/images/SamarArPo.png';
+import englishPoster from './../assets/Images/SamarEnPo.png';
+import arabicPoster from './../assets/Images/SamarArPo.png';
 
 export function Videos() {
     const [activeVideo, setActiveVideo] = useState(null);
